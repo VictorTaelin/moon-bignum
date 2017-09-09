@@ -1,0 +1,27 @@
+{
+  "name": "moon-bignum",
+  "version": "0.1.0",
+  "description": "Minimalistic bignum library compiled from Moon-lang.",
+  "main": "lib.min.js",
+  "scripts": {
+    "build": "echo \"module.exports = $(moon compile lib)()\" > lib.js",
+    "minify": "ccjs lib.js > lib.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiavictor/moon-bignum.git"
+  },
+  "keywords": [
+    "moon-lang",
+    "bignum"
+  ],
+  "author": "Victor Maia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maiavictor/moon-bignum/issues"
+  },
+  "homepage": "https://github.com/maiavictor/moon-bignum#readme",
+  "devDependencies": {
+    "bn.js": "^4.11.8"
+  }
+}
